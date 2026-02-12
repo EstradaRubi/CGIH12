@@ -1,10 +1,6 @@
-#include<iostream>
-
-//#define GLEW_STATIC
-
 #include <GL/glew.h>
-
 #include <GLFW/glfw3.h>
+#include<iostream>
 
 const GLint WIDTH = 800, HEIGHT = 600;
 
@@ -24,7 +20,7 @@ const GLchar* fragmentShaderSource =
 	"out vec4 color;\n"
 	"void main()\n"
 	"{\n"
-	"color = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
+	"color = vec4(1.0f, 1.0f, 0.0f, 1.0f);\n"
 	"}\n\0"
 };
 
@@ -79,7 +75,7 @@ int main() {
 	// Define las dimensiones del viewport
 	glViewport(0, 0, screenWidth, screenHeight);
 
-	//CrearShader();
+	CrearShader();
 
 	// Set up vertex data (and buffer(s)) and attribute pointers
 	GLfloat vertices[] =
@@ -119,7 +115,7 @@ int main() {
 
 		// Render
 		// Clear the colorbuffer
-		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+		glClearColor(0.5f, 0.8f, 1.0f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 
 
