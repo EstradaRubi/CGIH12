@@ -145,7 +145,7 @@ int main() {
 		//glDrawArrays(GL_LINES, 0, 4);
 
 		//EJERCICIO 4. Triangulo invertido
-		//glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, 0); //Corregir indices
+		//glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, 0); //Corregir indices 
 
 		//EJERCICIO 5. Dibujar cuadrado
 		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
